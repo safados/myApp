@@ -1,14 +1,177 @@
+<style>
+    ion-content{background-color: rgb(245, 245, 238)}
+    ion-checkbox{float: left;margin-bottom:30px;}
+    ion-label{margin-left: 25px;margin-bottom: -20px;}
+    h5{text-align: center;margin-bottom: 30px;margin-top:20px; }
+    ion-col{padding: 1px;}
+    input{border:none;padding-bottom: 30px; }
+    button{font-size: 13px;background:#00a4ff;
+    height: 80px;
+    margin-bottom: -1px;
+    font-size: 15px;
+    }
+    p{margin-bottom: 15px;}
+    input{margin-bottom: 50px;}
+</style>
+
+
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+<br>
+  
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content>
+<ion-card>
+        <ion-card-content>    
+        <h5>Title #1</h5>
+        <p>{{item.Question1}}</p>
+        <ion-row>
+            <ion-col >
+                
+                <ion-label>Roy</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item.Roy" ></ion-checkbox>
+            </ion-col>
+            <ion-col >
+                <ion-label>ola</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item.ola" ></ion-checkbox>
+            </ion-col>
+            <ion-col  >
+                <ion-label>jack</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item.jack" ></ion-checkbox>
+            </ion-col>
+            <ion-col >
+                <ion-label>wal</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item.wal" ></ion-checkbox>
+            </ion-col>
+            </ion-row>
+            
+            <p>{{item2.Question2}}</p>
+            <ion-row>
+                    
+                    <ion-col >
+                        <ion-label>ola</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item2.Ralf" ></ion-checkbox>
+                    </ion-col>
+                    <ion-col >  
+                    <ion-label>Roy</ion-label>
+                    <ion-checkbox  checked="false" [(ngModel)]="item2.kmn" ></ion-checkbox>
+                     </ion-col>
+                    <ion-col  >
+                        <ion-label>jack</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item2.kate" ></ion-checkbox>
+                    </ion-col>
+                    <ion-col >
+                        <ion-label>wal</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item2.sny" ></ion-checkbox>
+                    </ion-col>
+                    </ion-row>
+        </ion-card-content>
+    </ion-card>  
+
+<ion-card>
+        <ion-card-content>    
+        <h5>Title #2</h5>
+        <p>{{item3.Question3}}</p>
+        <ion-row>
+            <ion-col >
+                
+                <ion-label>Roy</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item3.koy" ></ion-checkbox>
+            </ion-col>
+            <ion-col >
+                <ion-label>ola</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item3.lalf" ></ion-checkbox>
+            </ion-col>
+            <ion-col  >
+                <ion-label>jack</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item3.mate" ></ion-checkbox>
+            </ion-col>
+            <ion-col >
+                <ion-label>wal</ion-label>
+                <ion-checkbox  checked="false" [(ngModel)]="item3.snny" ></ion-checkbox>
+            </ion-col>
+            </ion-row>
+          
+            <p>{{item4.Question4}}</p>
+            <ion-row>
+                    <ion-col >
+                        
+                        <ion-label>Roy</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item4.kny" ></ion-checkbox>
+                    </ion-col>
+                    <ion-col >
+                        <ion-label>ola</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item4.lblf" ></ion-checkbox>
+                    </ion-col>
+                    <ion-col  >
+                        <ion-label>jack</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item4.mtte" ></ion-checkbox>
+                    </ion-col>
+                    <ion-col >
+                        <ion-label>wal</ion-label>
+                        <ion-checkbox  checked="false" [(ngModel)]="item4.snfy" ></ion-checkbox>
+                    </ion-col>
+                    </ion-row>
+        </ion-card-content>
+    </ion-card>  
+
+
+    <ion-card>
+            <ion-card-content>    
+            <h5>Title #3</h5>
+            <p>{{item5.Question5}}</p>
+            <ion-row>
+                <ion-col >
+                    
+                    <ion-label>Roy</ion-label>
+                    <ion-checkbox  checked="false" [(ngModel)]="item5.knl" ></ion-checkbox>
+                </ion-col>
+                <ion-col >
+                    <ion-label>ola</ion-label>
+                    <ion-checkbox  checked="false" [(ngModel)]="item5.lbld" ></ion-checkbox>
+                </ion-col>
+                <ion-col  >
+                    <ion-label>jack</ion-label>
+                    <ion-checkbox  checked="false" [(ngModel)]="item5.mttp" ></ion-checkbox>
+                </ion-col>
+                <ion-col >
+                    <ion-label>wal</ion-label>
+                    <ion-checkbox  checked="false" [(ngModel)]="item5.snfq" ></ion-checkbox>
+                </ion-col>
+                </ion-row>
+              
+                <p>{{item6.Question6}}</p>
+                <ion-row>
+                        <ion-col >
+                            
+                            <ion-label>Roy</ion-label>
+                            <ion-checkbox  checked="false" [(ngModel)]="item6.knlh" ></ion-checkbox>
+                        </ion-col>
+                        <ion-col >
+                            <ion-label>ola</ion-label>
+                            <ion-checkbox  checked="false" [(ngModel)]="item6.ltg" ></ion-checkbox>
+                        </ion-col>
+                        <ion-col  >
+                            <ion-label>jack</ion-label>
+                            <ion-checkbox  checked="false" [(ngModel)]="item6.mtbr" ></ion-checkbox>
+                        </ion-col>
+                        <ion-col >
+                            <ion-label>wal</ion-label>
+                            <ion-checkbox  checked="false" [(ngModel)]="item6.snek" ></ion-checkbox>
+                        </ion-col>
+                        </ion-row>
+            </ion-card-content>
+        </ion-card>  
+ 
+        
+        <ion-card>
+            
+        <ion-card-content>
+            <input type="text" [(ngModel)]="item7.comment" placeholder="Add your feedback">
+        
+        </ion-card-content>
+        </ion-card>
+
+<button ion-button block  (click)="[addItem(item),addItem2(item2),addItem3(item3),addItem4(item4),addItem5(item5),addItem6(item6),addItem7(item7)]" >Submit</button>
+
 </ion-content>

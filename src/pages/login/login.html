@@ -1,0 +1,52 @@
+<ion-header>
+    <style>
+      button {
+    font-size:15px;
+    font-weight: bold;
+    color:#ffffff;
+    text-align:center;
+    background:#00a4ff;
+    border-radius:1px;
+    width:290px;
+    margin-left:5px;
+    height:50px;} 
+    div{float: left;}
+    ion-icon{zoom:2.0;padding-top:1px;padding-right:9px;padding-left:2px;}
+    .bg-image{
+            background-image:url('../assets/imgs/51FBBA54-BE0A-4D88-AB1D-03C360F74C82@2x.png');
+            background-repeat:no-repeat;
+            background-position:center;
+            background-size:contain;
+            width: 290px;
+            height: 120px;
+            margin-top:75px;
+        }
+     .mrg{margin-top:40px;margin-left:11px;} 
+     .btnMrgn{margin-top:60px;}  
+    </style>
+    </ion-header>
+    <ion-content>
+      
+       <div class="bg-image"></div> 
+        
+      <div class="mrg">
+          <div>
+            <ion-icon name="ios-person-outline"></ion-icon>
+          </div>
+          <div>
+            <ion-input type="text"  placeholder="email" [(ngModel)] ="userlog.email"></ion-input>
+          </div> 
+        <br><br><br><br>
+        <div> 
+            <ion-icon name="ios-lock-outline"></ion-icon>
+          </div>
+        <div>
+            <ion-input type="password"  placeholder="Password" [(ngModel)] ="userlog.password"></ion-input>
+          </div>
+    </div>     
+            <div class="btnMrgn">
+            <button ion-button (click)="login(userlog)" >Login</button>
+            </div>
+      
+    </ion-content>
+    

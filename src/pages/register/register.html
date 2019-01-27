@@ -1,0 +1,72 @@
+<ion-header>
+    <style>
+      button {
+        
+    font-size:14px;
+    font-weight: bold;
+    color:#ffffff;
+    text-align:center;
+    background:#00a4ff;
+    border-radius:1px;
+    width:290px;
+    margin-left:5px;
+    height:55px;} 
+    div{float: left;
+   }
+    ion-icon{zoom:2.0;padding-top:1px;padding-right:9px;padding-left:2px;}
+    ion-item{width:220px;padding-left: 2px;border-color: rgb(255, 255, 255)}
+    ion-label{color:rgb(162, 162, 162);}
+    .mrg{padding-top:50px;margin-left:4px;}
+  .bg-image{
+        background-image:url('../assets/imgs/51FBBA54-BE0A-4D88-AB1D-03C360F74C82@2x.png');
+        background-repeat:no-repeat;
+        background-position:center;
+        background-size:contain;
+        width: 300px;
+        height: 120px;
+        margin-top:60px;   
+    } 
+    .mrgbut{margin-top:30px;}
+   </style>
+    </ion-header>
+    
+    
+  <ion-content>
+      <div class="bg-image"></div>
+    <div class="mrg">
+      
+      <div>
+        
+        <ion-icon name="ios-person-outline"></ion-icon>
+      </div>
+      <div>
+        <ion-input type="text" placeholder="Name" [(ngModel)] ="user.Name"></ion-input>
+      </div> 
+    <br><br><br><br> 
+    <div> 
+        <ion-icon name="ios-phone-portrait-outline"></ion-icon>
+      </div>
+    <div>
+        <ion-input type="text"  placeholder="Phone" [(ngModel)] ="user.Phone"></ion-input>
+      </div>
+      <br><br><br><br> 
+    <div> 
+        <ion-icon name="ios-transgender-outline"></ion-icon>
+      </div>
+      
+    <div>
+        <ion-item>
+            <ion-label>Gender</ion-label>
+            <ion-select [(ngModel)]="user.Gender">
+              <ion-option value="female">Female</ion-option>
+              <ion-option value="male">Male</ion-option>
+            </ion-select>
+          </ion-item> 
+       
+      </div>
+    </div>  
+      <div class="mrgbut">
+        <button ion-button (click)="register(user)" >Next</button>
+      </div>  
+   
+    </ion-content>
